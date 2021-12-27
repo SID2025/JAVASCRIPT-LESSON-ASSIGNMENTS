@@ -1,0 +1,53 @@
+
+developer.mozilla.org/en-US/
+
+CORRECT CODING FOR FUNCTION:
+
+A)function Calculate(arr,n){
+  
+  if(n===undefined)
+   return arr[0];
+
+   if(n<0)
+   return[]; 
+   
+return arr.slice(0,n);
+
+  }
+ 
+console.log(Calculate([1,6,4,5]));
+
+B)Anonymous function for making evets like onclick,onload etc
+For event to perform specific task we need function:
+ES6 ARROW FUNCTION
+var res=function(a,b)
+{
+return a+b;
+}
+console.log(res(12,13));
+
+c) ARROW FUNCTION
+if you have a single statements inside the function, you dont need a 
+return keyword.
+
+var res=(a,b)=>a+b;
+console.log(res(12,13));
+
+for multiple statements:
+
+var res=(a,b)=>{
+var c=30;
+return a+b+c;
+}
+console.log(res(12,13));
+
+D) var res=function(s)
+ return "hello"+s+"welcome to guvi";
+}
+console.log (res("john doe"));
+
+
+BY ARROW FUNCTION REPRESENTATION:
+
+var res=(s)=>"hello"+"  "+s+"  "+"welcome to guvi";
+ console.log (res("john doe"));
